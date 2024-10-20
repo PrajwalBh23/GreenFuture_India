@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM SUR YOJNA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div id="content1" class="landingA">
+        <div class="visible">
+            <nav class="navbar h-nav header" style="flex-wrap: nowrap;">
+                <div class="container">
+                    <div class="d-flex flex-row align-items-center" onclick="location.href='/'">
+                        <div class="col-md-auto p-0 d-inline-block">
+                            <img src="./images/logo.jpg" alt="Logo" class="img-fluid">
+                        </div>
+                        <div class="col-md-auto text-center text-md-left">
+                            <span>GreenFuture India</span>
+                        </div>
+                    </div>
+                    <ul class="nav_list v-class">
+                        <li><a href="/">Home</a></li>
+                        <li><a onclick="scrollToAbout(event)">About</a></li>
+                        <li><a href="#LearnMore">Learn More</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                        <button class="hindi" id="toggleButton">हिंदी</button>
+                    </ul>
+                    <div class="burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+            </nav>
+            <div class="back container-fluid d-flex flex-column align-items-start" style="padding: 5rem;">
+                <h1 class="display-4 font-weight-bold">Empowering India Towards</h1>
+                <h1 class="coloring display-4 font-weight-bold">Net Zero Future</h1>
+                <p class="lead mt-4">Fulfilling <span class="fonting">PM Modi's Vision </span>of a Sustainable Future
+                </p>
+                <button onclick="document.getElementById('LearnMore').scrollIntoView({ behavior: 'smooth' });"
+                    class="btn btn-primary mt-3">Get Started</button>
+                <div class="nav-logo-wrapper">
+                    <img src="https://cdn.prod.website-files.com/64a81df87c7fc8bae4b62809/64a820f064c6b63672bcd490_Azadi-Ka-Amrit-Mahotsav-Logo.png"
+                        loading="lazy" alt="" class="nav-logo">
+                    <img src="https://cdn.prod.website-files.com/64a81df87c7fc8bae4b62809/64a820f0f81993ff7b5db2a0_g20-logo.png"
+                        loading="lazy" alt="" class="nav-logo">
+                </div>
+            </div>
+
+            <section id="About" class="about container-fluid d-flex flex-column align-items-start"
+                style="padding: 5rem;">
+                <h1>About us</h1>
+                <div class="main d-flex flex-row justify-content-center align-items-start">
+                    <div class="box">
+                        <img src="./images/Sur.jpg" alt="">
+                        <p class="fw-bold text-center">PM Suryoday Yojana</p>
+                        <p class="text-center">
+                            A government initiative aimed at promoting solar power generation across the country. This
+                            scheme helps in the installation of solar panels on rooftops, large solar farms, and in
+                            rural areas to ensure clean and affordable energy.
+                        </p>
+                        <ul class="text-start list-styled-georgian"> <!-- Add this class for Bootstrap -->
+                            <p class="ps-0 text-start">The program aims to:</p>
+                            <li>Reduce dependence on non-renewable energy.</li>
+                            <li>Provide affordable energy to households and businesses.</li>
+                            <li>Encourage public-private partnerships for solar power.</li>
+                            <li>Help India achieve its climate targets by increasing renewable energy usage.</li>
+                        </ul>
+                        <p>
+                            India is already one of the leaders in renewable energy, it is another step towards
+                            achieving energy security and sustainable development.
+                            <a href="">Learn More</a>
+                        </p>
+                    </div>
+
+                    <div class="box">
+                        <img style="width: 80%;;" src="./images/net_zero.jpg" alt="">
+                        <p class="fw-bold text-center">NetZero India Foundation</p>
+                        <p class="text-center">
+                            The NetZero India Foundation is a government initiative dedicated to helping India achieve
+                            net-zero carbon emissions by 2070.
+                        </p>
+                        <ul class="text-start list-styled-georgian"> <!-- Add this class for Bootstrap -->
+                            <p class="ps-0 text-start">Mission of Net Zero India Foundation:</p>
+                            <li>Helping India achieve "net-zero emissions" by 2070.</li>
+                            <li>Collaborating with industries, and citizens to promote eco-friendly practices.</li>
+                            <li>Promoting the use of renewable energy (solar, wind, hydro) to replace fossil fuels.</li>
+                            <li>Supporting research and development in green technologies.</li>
+                        </ul>
+                        <p>We focus on promoting green technologies to reduce carbon emissions and foster
+                            sustainability. <a href="">Learn More</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="LearnMore" class="main_section d-flex flex-column align-items-start"
+                style="padding: 0rem 5rem;">
+                <h1>PM Suryoday Yojana</h1>
+                <div class="boxing py-2">
+                    <img src="./images/sur_yo.jpg" alt="">
+                    <div class="contain">
+                        <p>
+                            The objective of the Pradhan Mantri Suryodaya Yojana is to reduce the electricity bills of
+                            the
+                            poor and middle class families of the country by installing solar panels on the roof of
+                            their
+                            houses and to promote green energy. Under this scheme, the government is providing subsidy
+                            in
+                            the form of financial assistance to poor families, so that they can use solar energy and
+                            also
+                            make the environment clean and safe.
+                            This scheme was launched by Prime Minister Narendra Modi on 22 January 2024, and its main
+                            purpose is to provide affordable and sustainable energy solutions to the poor of the
+                            country.
+                        </p>
+                        <ul class="text-start list-styled-georgian">
+                            <p class="ps-0 text-start">Benefits Of Suryoday Yojana:</p>
+                            <li><strong>Reduction in electricity bill</strong>: After installing solar panels, there
+                                will be
+                                a huge reduction
+                                in the electricity bill or the bill may be eliminated altogether.</li>
+                            <li><strong>Subsidy by Government</strong>: The government will provide the subsidy amount
+                                to
+                                the eligible
+                                beneficiaries directly in their bank account.</li>
+                            <li><strong>Promotion of Green Energy</strong>: Use of solar energy will not only keep the
+                                environment clean but
+                                will also reduce the cost of energy.</li>
+                            <li><strong>Financial Help</strong>: This scheme will prove to be a financial relief for
+                                poor
+                                and middle-class
+                                families.</li>
+                            <li><strong>Self-Reliance</strong>: Through solar energy, families will become self-reliant
+                                and
+                                will not have to
+                                depend on external energy sources.</li>
+
+                        </ul>
+                        <p>Visit the <a href="https://pmsuryodayyojanaonline.in/">official website.</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main_section d-flex flex-column align-items-start" style="padding: 3rem 5rem;">
+                <h1>NetZero India Foundation</h1>
+                <div class="boxing py-2">
+                    <img src="./images/net.jpg" alt="">
+                    <div class="contain">
+                        <p>
+                            Net Zero India Foundation committed to translating Prime Minister
+                            Narendra Modi Ji's visionary dream of making India a Net Zero nation into a tangible
+                            reality.
+                            Their mission is to be at the forefront of driving the transition towards a sustainable,
+                            carbon-neutral future for one of the world's most populous nations.
+                            Their approach is multifaceted, encompassing policy advisory, sustainable solutions for
+                            businesses, state-of-the-art sustainability management software, and support for startups
+                            that
+                            align with the Net Zero theme.
+                        </p>
+                        <ul class="text-start list-styled-georgian">
+                            <p class="ps-0 text-start">Goals of NetZero India Foundation:</p>
+                            <li><strong>Net-zero emissions</strong>: Achieve carbon neutrality by reducing greenhouse
+                                gases
+                                (GHG) emissions.</li>
+                            <li><strong>Green energy adoption</strong>: Promote the widespread adoption of renewable
+                                energy.
+                            </li>
+                            <li><strong>Public Awareness</strong>: Conduct campaigns and workshops to spread awareness
+                                about
+                                climate change, energy efficiency, and sustainability.</li>
+                            <li><strong>Sustainable Development</strong>: Contribute to India's Sustainable Development
+                                Goals (SDGs) by focusing on clean energy and climate action.</li>
+                        </ul>
+                        <p>Visit the <a href="https://www.netzeroindia.org/">official website.</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div id="Contact" class="contact py-5 d-flex flex-row align-items-start" style="padding: 5rem;">
+                <div class="contain col-lg-6 col-md-12 d-flex flex-column justify-content-center">
+                    <h2>Stay<span class="text-gradient"> Connected</span></h2>
+                    <p class="text-size-regular">Join our mailing list to stay informed about latest news and how you
+                        can
+                        get involved in the journey towards a cleaner, more sustainable India</p>
+                    <!-- Contact Form -->
+                    <form id="email-form" name="email-form" method="get" class="contact-form" aria-label="Email Form">
+                        <div class="mb-3 d-flex">
+                            <input class="form-control"
+                                style="width: 70%; border-radius: 0; border:1px solid rgb(93, 92, 92);" type="email"
+                                id="Email" name="Email" placeholder="Enter your email..." required>
+                            <button type="submit" class="btn btn-primary"
+                                style="border-radius: 0; border:1px solid rgb(93, 92, 92); margin-left: -1px;">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <img style="width: 60%;" src="./images/news1.png" alt="Contact Us" class="img-fluid">
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer d-flex justify-content-between align-items-start">
+                    <ul class="d-flex flex-row align-items-start list-unstyled mb-0">
+                        <li class="px-3"><a href="#">Home</a></li>
+                        <li class="px-3"><a href="#">About</a></li>
+                        <li class="px-3"><a href="#">Learn More</a></li>
+                        <li class="px-3"><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="social-icons d-flex flex-row align-items-start">
+                        <a href="#" class="px-2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="px-2"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#" class="px-2"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <hr style="border: none; height: 1px; background-color: white; margin: 5px 5rem ;">
+                <p class="copy" style="text-align: center; color: white;">Copyright &copy; Reserved 2050
+                    www.GreenFutureIndia.com</p>
+
+            </footer>
+        </div>
+
+    </div>
+
+    <div id="content2" class="landingB">
+        <div class="hidden">
+            <nav class="navbar h-nav header" style="flex-wrap: nowrap;">
+                <div class="container">
+                    <div class="d-flex flex-row align-items-center" onclick="location.href='/'">
+                        <div class="col-md-auto p-0 d-inline-block">
+                            <img src="./images/logo.jpg" alt="Logo" class="img-fluid">
+                        </div>
+                        <div class="col-md-auto text-center text-md-left">
+                            <span>ग्रीनफ्यूचर इंडिया</span>
+                        </div>
+                    </div>
+                    <ul class="nav_list v-class">
+                        <li><a href="/">होम</a></li>
+                        <li><a href="#About1" onclick="scrollToAbout1(event)">हमारे बारे में</a></li>
+                        <li><a href="#LearnMore1">अधिक जानें</a></li>
+                        <li><a href="#Contact1">संपर्क करें</a></li>
+                        <button class="hindi" id="toggleButton">हिंदी</button>
+                    </ul>
+                    <div class="burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+            </nav>
+            <div class="back container-fluid d-flex flex-column align-items-start" style="padding: 5rem;">
+                <h1 class="display-4 font-weight-bold">भारत को सशक्त बनाना</h1>
+                <h1 class="coloring display-4 font-weight-bold">नेट ज़ीरो भविष्य की ओर</h1>
+                <p class="lead mt-4">पीएम मोदी के<span class="fonting"> सतत भविष्य </span>के दृष्टिकोण को पूरा करना</p>
+                <button onclick="document.getElementById('LearnMore').scrollIntoView({ behavior: 'smooth' });"
+                    class="btn btn-primary mt-3">शुरू करें</button>
+                <div class="nav-logo-wrapper">
+                    <img src="https://cdn.prod.website-files.com/64a81df87c7fc8bae4b62809/64a820f064c6b63672bcd490_Azadi-Ka-Amrit-Mahotsav-Logo.png"
+                        loading="lazy" alt="" class="nav-logo">
+                    <img src="https://cdn.prod.website-files.com/64a81df87c7fc8bae4b62809/64a820f0f81993ff7b5db2a0_g20-logo.png"
+                        loading="lazy" alt="" class="nav-logo">
+                </div>
+            </div>
+
+            <section id="About1" class="about container-fluid d-flex flex-column align-items-start"
+                style="padding: 5rem;">
+                <h1>हमारे बारे में</h1>
+                <div class="main d-flex flex-row justify-content-center align-items-start">
+                    <div class="box">
+                        <img src="./images/Sur.jpg" alt="">
+                        <p class="fw-bold text-center">पीएम सूर्य उदय योजना</p>
+                        <p class="text-center">
+                            एक सरकारी पहल जो देश भर में सौर ऊर्जा उत्पादन को बढ़ावा देने के लिए है। यह योजना छतों पर
+                            सोलर पैनल लगाने, बड़े सौर ऊर्जा फार्मों और ग्रामीण क्षेत्रों में स्वच्छ और किफायती ऊर्जा
+                            उपलब्ध कराने में मदद करती है।
+                        </p>
+                        <ul class="text-start list-styled-georgian">
+                            <p class="ps-0 text-start">इस योजना का उद्देश्य:</p>
+                            <li>गैर-नवीकरणीय ऊर्जा पर निर्भरता कम करना।</li>
+                            <li>घरों और व्यवसायों को किफायती ऊर्जा प्रदान करना।</li>
+                            <li>सौर ऊर्जा के लिए सार्वजनिक-निजी भागीदारी को प्रोत्साहित करना।</li>
+                            <li>नवीकरणीय ऊर्जा के उपयोग को बढ़ाकर भारत के जलवायु लक्ष्यों को प्राप्त करना।</li>
+                        </ul>
+                        <p>
+                            भारत पहले से ही नवीकरणीय ऊर्जा में अग्रणी है, यह ऊर्जा सुरक्षा और सतत विकास प्राप्त करने की
+                            दिशा
+                            में एक और कदम है।
+                            <a href="">अधिक जानें</a>
+                        </p>
+                    </div>
+
+                    <div class="box">
+                        <img style="width: 80%;" src="./images/net_zero.jpg" alt="">
+                        <p class="fw-bold text-center">नेट ज़ीरो इंडिया फाउंडेशन</p>
+                        <p class="text-center">
+                            नेट ज़ीरो इंडिया फाउंडेशन एक सरकारी पहल है जिसका उद्देश्य 2070 तक भारत को शुद्ध-शून्य कार्बन
+                            उत्सर्जन प्राप्त करने में मदद करना है।
+                        </p>
+                        <ul class="text-start list-styled-georgian">
+                            <p class="ps-0 text-start">नेट ज़ीरो इंडिया फाउंडेशन का मिशन:</p>
+                            <li>भारत को 2070 तक "शुद्ध-शून्य उत्सर्जन" प्राप्त करने में मदद करना।</li>
+                            <li>उद्योगों और नागरिकों के साथ मिलकर पर्यावरण-अनुकूल प्रथाओं को बढ़ावा देना।</li>
+                            <li>जीवाश्म ईंधन के स्थान पर नवीकरणीय ऊर्जा (सौर, पवन, जल) के उपयोग को बढ़ावा देना।</li>
+                            <li>हरित प्रौद्योगिकियों में अनुसंधान और विकास का समर्थन करना।</li>
+                        </ul>
+                        <p>हम कार्बन उत्सर्जन को कम करने और स्थिरता को बढ़ावा देने के लिए हरित प्रौद्योगिकियों को बढ़ावा
+                            देने पर ध्यान केंद्रित करते हैं।
+                            <a href="">अधिक जानें</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="LearnMore1" class="main_section d-flex flex-column align-items-start" style="padding: 0rem 5rem;">
+                <h1>पीएम सूर्य उदय योजना</h1>
+                <div class="boxing py-2">
+                    <img src="./images/sur_yo.jpg" alt="">
+                    <div class="contain">
+                        <p>
+                            प्रधान मंत्री सूर्य उदय योजना का उद्देश्य देश के गरीब और मध्यम वर्गीय परिवारों के बिजली
+                            बिलों को
+                            कम करना है, ताकि वे अपने घरों की छत पर सौर पैनल लगाकर सौर ऊर्जा का उपयोग कर सकें और
+                            पर्यावरण को स्वच्छ और सुरक्षित बना सकें। इस योजना के तहत सरकार गरीब परिवारों को वित्तीय
+                            सहायता
+                            के रूप में सब्सिडी प्रदान कर रही है, ताकि वे सौर ऊर्जा का उपयोग कर सकें।
+                        </p>
+                        <ul class="text-start list-styled-georgian">
+                            <p class="ps-0 text-start">सूर्य उदय योजना के लाभ:</p>
+                            <li><strong>बिजली बिल में कमी:</strong> सौर पैनल लगाने के बाद बिजली बिल में भारी कमी आएगी या
+                                बिल
+                                पूरी तरह समाप्त हो सकता है।</li>
+                            <li><strong>सरकारी सब्सिडी:</strong> सरकार सब्सिडी की राशि पात्र लाभार्थियों के बैंक खाते
+                                में
+                                सीधे भेजेगी।</li>
+                            <li><strong>ग्रीन एनर्जी का प्रचार:</strong> सौर ऊर्जा का उपयोग न केवल पर्यावरण को स्वच्छ
+                                रखेगा,
+                                बल्कि ऊर्जा की लागत को भी कम करेगा।</li>
+                            <li><strong>वित्तीय सहायता:</strong> यह योजना गरीब और मध्यम वर्गीय परिवारों के लिए वित्तीय
+                                राहत
+                                साबित होगी।</li>
+                            <li><strong>आत्मनिर्भरता:</strong> सौर ऊर्जा के माध्यम से परिवार आत्मनिर्भर बनेंगे और बाहरी
+                                ऊर्जा स्रोतों पर निर्भर नहीं रहेंगे।</li>
+                        </ul>
+                        <p>आधिकारिक वेबसाइट पर जाएं: <a href="https://pmsuryodayyojanaonline.in/">यहां क्लिक करें</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Contact1" class="main_section d-flex flex-column align-items-start" style="padding: 3rem 5rem;">
+                <h1>नेट ज़ीरो इंडिया फाउंडेशन</h1>
+                <div class="boxing py-2">
+                    <img src="./images/net.jpg" alt="">
+                    <div class="contain">
+                        <p>
+                            नेट ज़ीरो इंडिया फाउंडेशन प्रधान मंत्री नरेंद्र मोदी जी के दृष्ट
+
+                            िकोण को साकार करने में एक महत्वपूर्ण पहल है। इस पहल का उद्देश्य भारत को 2070 तक शुद्ध-शून्य
+                            उत्सर्जन देश बनाना है। इस लक्ष्य को हासिल करने के लिए, सरकार और उद्योगों के बीच साझेदारी को
+                            मजबूत किया जा रहा है, और हरित ऊर्जा, हरित प्रौद्योगिकी और सतत विकास की दिशा में ठोस कदम उठाए
+                            जा
+                            रहे हैं।
+                        </p>
+                        <ul class="text-start list-styled-georgian">
+                            <p class="ps-0 text-start">नेट ज़ीरो इंडिया फाउंडेशन के उद्देश्य:</p>
+                            <li>सतत ऊर्जा समाधान जैसे सौर, पवन, और जल ऊर्जा का प्रचार और प्रसार करना।</li>
+                            <li>औद्योगिक और घरेलू स्तर पर ऊर्जा के अधिकतम दक्ष उपयोग को बढ़ावा देना।</li>
+                            <li>रिसर्च और डेवलपमेंट में निवेश बढ़ाना ताकि नई हरित प्रौद्योगिकियाँ विकसित की जा सकें।
+                            </li>
+                            <li>स्वच्छ और ग्रीन एनर्जी पर निर्भरता बढ़ाना और कार्बन उत्सर्जन को कम करना।</li>
+                        </ul>
+                        <p>
+                            यह पहल भारत के सतत विकास और पर्यावरण की रक्षा की दिशा में एक बड़ा कदम है। नेट ज़ीरो इंडिया
+                            फाउंडेशन के माध्यम से, सरकार और जनता मिलकर 2070 तक भारत को शुद्ध-शून्य उत्सर्जन राष्ट्र
+                            बनाने का
+                            लक्ष्य पूरा करने की दिशा में काम कर रहे हैं।
+                        </p>
+                        <p>अधिक जानकारी के लिए: <a href="https://www.nzi.org/">यहां क्लिक करें</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <div id="Contact" class="contact py-5 d-flex flex-row align-items-start" style="padding: 5rem;">
+                <div class="contain col-lg-6 col-md-12 d-flex flex-column justify-content-center">
+                    <h2>जुड़े<span class="text-gradient"> रहें</span></h2>
+                    <p class="text-size-regular">हमारी मेलिंग लिस्ट में शामिल हों और एक साफ, अधिक टिकाऊ भारत की दिशा में
+                        यात्रा में कैसे शामिल हो सकते हैं, इसके बारे में नवीनतम समाचारों के बारे में जानकारी प्राप्त
+                        करें।
+                    </p>
+                    <!-- Contact Form -->
+                    <form id="email-form" name="email-form" method="get" class="contact-form" aria-label="Email Form">
+                        <div class="mb-3 d-flex">
+                            <input class="form-control"
+                                style="width: 70%; border-radius: 0; border:1px solid rgb(93, 92, 92);" type="email"
+                                id="Email" name="Email" placeholder="Enter your email..." required>
+                            <button type="submit" class="btn btn-primary"
+                                style="border-radius: 0; border:1px solid rgb(93, 92, 92); margin-left: -1px;">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <img style="width: 60%;" src="./images/news1.png" alt="Contact Us" class="img-fluid">
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer d-flex justify-content-between align-items-start">
+                    <ul class="d-flex flex-row align-items-start list-unstyled mb-0">
+                        <li class="px-3"><a href="#">होम</a></li>
+                        <li class="px-3"><a href="#">हमारे बारे में</a></li>
+                        <li class="px-3"><a href="#">अधिक जानें</a></li>
+                        <li class="px-3"><a href="#">संपर्क करें</a></li>
+                    </ul>
+                    <div class="social-icons d-flex flex-row align-items-start">
+                        <a href="#" class="px-2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="px-2"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#" class="px-2"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <hr style="border: none; height: 1px; background-color: white; margin: 5px 5rem ;">
+                <p class="copy" style="text-align: center; color: white;">Copyright &copy; Reserved 2050
+                    www.GreenFutureIndia.com</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./script.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
